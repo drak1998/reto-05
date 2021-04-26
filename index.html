@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+         box-sizing: border-box;
+        }
+        
+        p{
+        margin: 32px 0px;
+        padding: 5;
+        text-align: left;
+        box-sizing: border-box;
+        background-color:cornsilk;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>OPCION_02</h1>
+    <p>“El     náufrago     satisfecho”     ofrece hamburguesas  sencillas,  dobles  y  triples,las cuales  
+        tienen  un  costo  de  $20.00,  $25.00  y $28.00 respectivamente. La empresa acepta tarjetas de crédito con 
+        un cargo de 5 % sobre la compra.Suponiendo  que  los  clientes  adquieren  sólo un tipo de hamburguesa, realice
+         un algoritmo para  determinar  cuánto  debe  pagar  una persona por N hamburguesas.</p>
+    <script>
+        let anuncio=+prompt("¿Cual es su Pedido? 1-simple 2-doble 3-triple");
+        let simple = 0;
+        let doble =0;
+        let triple = 0;
+        let tipo_pag=0;
+        let pago_to=0;
+
+        switch(anuncio){
+            case 1:
+            simple = +prompt("Escriba la cantidad de Hambur Simple");
+            anuncio= +prompt(" Tipo de pago: 1-contado 2-credito");
+            if(anuncio===1){
+                pago_to = simple *20;
+            }else{
+                pago_to = (simple*20)*1.05;
+            
+            }
+            break;
+            case 2:
+            doble = +prompt("Escriba la cantidad de Hambur Doble");
+            anuncio= +prompt(" Tipo de pago: 1-contado 2-credito");
+            if(anuncio===1){
+                pago_to = doble *25;
+            }else{
+                pago_to = (doble*25)*1.05;
+            
+            }
+            break;
+            case 3:c
+            triple = +prompt("Escriba la cantidad de Hambur Triple");
+            anuncio= +prompt(" Tipo de pago: 1-contado 2-credito");
+            if(anuncio===1){
+                pago_to = triple *28;
+            }else{
+                pago_to = (triple*28)*1.05;
+            
+            }
+            break;
+            default:
+            }
+            alert(`Monto a Pagar es ${pago_to.toFixed(3)}`);
+    </script>
+</body>
+</html>
